@@ -9,6 +9,7 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+        this.supportActionBar?.hide()
 
         val nameFromIntent = intent.getStringExtra("name")
         tv_vs_player_title.text = "${nameFromIntent} VS Player"
