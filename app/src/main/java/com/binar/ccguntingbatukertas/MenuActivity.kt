@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_menu.*
+import kotlin.system.exitProcess
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +25,9 @@ class MenuActivity : AppCompatActivity() {
             val vsPlayerIntent = Intent(this, MainActivity::class.java)
             startActivity(vsPlayerIntent)
         }
+
+//        tv_menu_keluar.setOnClickListener {
+//            exitProcess(0)
+//        }
     }
 }
