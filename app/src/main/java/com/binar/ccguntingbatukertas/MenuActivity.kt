@@ -12,8 +12,8 @@ class MenuActivity : AppCompatActivity() {
         this.supportActionBar?.hide()
 
         val nameFromIntent = intent.getStringExtra("name")
-        tv_vs_player_title.text = "${nameFromIntent} VS Player"
-        tv_vs_com_title.text = "${nameFromIntent} VS COM"
+        tv_vs_player_title.text = "${nameFromIntent} vs Player"
+        tv_vs_com_title.text = "${nameFromIntent} vs COM"
 
         iv_vs_player.setOnClickListener {
             val vsComIntent = Intent(this, MainActivity::class.java)
