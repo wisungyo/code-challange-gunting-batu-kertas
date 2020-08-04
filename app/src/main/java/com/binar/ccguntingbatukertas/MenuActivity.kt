@@ -14,12 +14,12 @@ class MenuActivity : AppCompatActivity() {
         tv_vs_player_title.text = "${nameFromIntent} VS Player"
         tv_vs_com_title.text = "${nameFromIntent} VS COM"
 
-        tv_vs_player_title.setOnClickListener {
+        iv_vs_player.setOnClickListener {
             val vsComIntent = Intent(this, MainActivity::class.java)
             startActivity(vsComIntent)
         }
 
-        tv_vs_com_title.setOnClickListener {
+        iv_vs_com.setOnClickListener {
             val vsPlayerIntent = Intent(this, MainActivity::class.java)
             startActivity(vsPlayerIntent)
         }
