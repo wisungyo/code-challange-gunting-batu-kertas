@@ -11,15 +11,15 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         val nameFromIntent = intent.getStringExtra("name")
-        btn_vs_player.text = "${nameFromIntent} VS Player"
-        btn_vs_com.text = "${nameFromIntent} VS COM"
+        tv_vs_player_title.text = "${nameFromIntent} VS Player"
+        tv_vs_com_title.text = "${nameFromIntent} VS COM"
 
-        btn_vs_com.setOnClickListener {
+        tv_vs_player_title.setOnClickListener {
             val vsComIntent = Intent(this, MainActivity::class.java)
             startActivity(vsComIntent)
         }
 
-        btn_vs_player.setOnClickListener {
+        tv_vs_com_title.setOnClickListener {
             val vsPlayerIntent = Intent(this, MainActivity::class.java)
             startActivity(vsPlayerIntent)
         }
