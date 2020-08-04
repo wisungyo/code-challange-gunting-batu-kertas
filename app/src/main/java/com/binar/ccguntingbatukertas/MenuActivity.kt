@@ -26,8 +26,9 @@ class MenuActivity : AppCompatActivity() {
             startActivity(vsPlayerIntent)
         }
 
-//        tv_menu_keluar.setOnClickListener {
-//            exitProcess(0)
-//        }
+        tv_menu_keluar.setOnClickListener {
+            finishAffinity()
+            exitProcess(0)
+        }
     }
 }
